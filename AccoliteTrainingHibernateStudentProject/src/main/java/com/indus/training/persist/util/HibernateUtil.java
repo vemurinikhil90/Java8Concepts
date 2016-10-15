@@ -13,7 +13,7 @@ public class HibernateUtil {
 	private static SessionFactory buildSessionFactory() {
 		try {
 	
-			File file=new File("C://IndusValley//Training//KPWeblogicSOAPUI//IndusTrainingHibernateEmpDepProject3//src//main//resources//hibernate.cfg.xml");
+			File file=new File("C://IndusValley//Training//JEEUILayer//AccoliteTrainingHibernateStudentProject//src//main//resources//hibernate.cfg.xml");
 			
 			Configuration configuration = new Configuration().configure(file);
 			ServiceRegistryBuilder builder = new ServiceRegistryBuilder().
