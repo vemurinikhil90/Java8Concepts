@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.indus.training.persist.entity">
+
+	<class name="StudentDO" table="STUDENTTABLE">
+
+		<id name="id" column="std_id">
+			<generator class="assigned" />
+		</id>
+
+		<property name="name" column="std_name" />
+		<property name="phone" column="std_phone" />
+		<property name="mail" column="std_mail" />
+
+	</class>
+
+</hibernate-mapping>

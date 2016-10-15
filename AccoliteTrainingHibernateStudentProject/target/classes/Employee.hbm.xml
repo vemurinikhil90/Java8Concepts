@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.indus.training.persist.entity">
+
+	<class name="Employee" table="EMPLOYEES">
+
+		<id name="empId" column="EMPLOYEE_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="firstName" column="FIRST_NAME" />
+		<property name="lastName" column="LAST_NAME" />
+		<property name="eMail" column="EMAIL" />
+		<property name="phoneNumber" column="PHONE_NUMBER" />
+		<property name="hireDate" column="HIRE_DATE" />
+		<property name="jobId" column="JOB_ID" />
+		<property name="salary" column="SALARY" />
+		<property name="commisionPercent" column="COMMISSION_PCT" />
+		<property name="managerId" column="MANAGER_ID" />
+		<property name="departmentId" column="DEPARTMENT_ID" insert="false" update="false"/>
+		<!-- <many-to-one name="department" class = "Department" column ="DEPARTMENT_ID" insert="false" update="false"  lazy = "false" ></many-to-one> -->
+		
+		
+
+	</class>
+
+</hibernate-mapping>

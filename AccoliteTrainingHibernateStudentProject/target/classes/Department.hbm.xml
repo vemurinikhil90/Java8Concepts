@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.indus.training.persist.entity">
+
+	<class name="Department" table="Departments">
+
+		<id name="deptId" column="DEPARTMENT_ID">
+			<generator class="assigned" />
+		</id>
+		<property name="deptName" column="DEPARTMENT_NAME" />
+		<property name="managerId" column="MANAGER_ID" />
+		<property name="locationId" column="LOCATION_ID" />
+		
+		<!--<set name="employees" lazy ="false"> 
+		<key column ="DEPARTMENT_ID" not-null="true" />
+		<one-to-many class ="Employee" />
+		</set>-->
+
+	</class>
+
+</hibernate-mapping>
